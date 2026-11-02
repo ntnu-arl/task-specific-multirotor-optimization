@@ -1,0 +1,68 @@
+{
+ "optimized": {
+  "design": {
+   "x": [
+    0.002272727337761548,
+    0.5727157219516044,
+    0.00810312231553492,
+    0.4929647716696439,
+    0.01346636004237512,
+    0.05161992048905642,
+    0.49291515825535553,
+    0.5476590297663192,
+    0.0018609802920649524,
+    0.7428201728821359,
+    0.01697963333618385,
+    0.5102166126776093,
+    0.9543576842191585,
+    0.45049148813910894,
+    0.2081517484908753
+   ]
+  },
+  "fitness": 34.7373046875,
+  "gates_per_episode": 35.23291015625,
+  "missed_per_episode": 0.049072265625,
+  "crash_rate": 0.00048828125,
+  "episodes": 4096
+ },
+ "planar": {
+  "design": {
+   "name": "planar"
+  },
+  "fitness": 29.370849609375,
+  "gates_per_episode": 30.183837890625,
+  "missed_per_episode": 0.0810546875,
+  "crash_rate": 0.000244140625,
+  "episodes": 4096
+ },
+ "franchi": {
+  "design": {
+   "name": "franchi"
+  },
+  "fitness": 30.7197265625,
+  "gates_per_episode": 31.33740234375,
+  "missed_per_episode": 0.0615234375,
+  "crash_rate": 0.000244140625,
+  "episodes": 4096
+ },
+ "rajappa": {
+  "design": {
+   "name": "rajappa"
+  },
+  "fitness": 28.876220703125,
+  "gates_per_episode": 29.623291015625,
+  "missed_per_episode": 0.074462890625,
+  "crash_rate": 0.000244140625,
+  "episodes": 4096
+ },
+ "shen": {
+  "design": {
+   "name": "shen"
+  },
+  "fitness": 28.31982421875,
+  "gates_per_episode": 29.455078125,
+  "missed_per_episode": 0.113525390625,
+  "crash_rate": 0.0,
+  "episodes": 4096
+ }
+}

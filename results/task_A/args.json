@@ -1,0 +1,1 @@
+{"run_dir": "/proj/results/task_A", "bo_evals": 400, "cma_evals": 400, "batch": 20, "cma_sigma": 0.1, "seed": 242689, "task": "A"}

@@ -1,0 +1,668 @@
+[rl] training the controllers of the baselines planar (sequential halving ((16, 0), (8, 150), (4, 300)), 900 PPO iterations)
+      warm start (imitating each design's LQR): 5 s, rms error 0.229
+[rl] halving: iterations 0-150 of 900 for trainings 1.. (16 of 16 still going, 1 designs)
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.2
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5090" (31 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /proj/build/warp_cache/1.18.0
+Module validate_and_correct_inertia_kernel_1ff2ac62 1ff2ac6 load on device 'cuda:0' took 4.65 ms  (cached)
+Module sim 3c5560f load on device 'cuda:0' took 4.02 ms  (cached)
+Module newton._src.solvers.solver d7b7ff4 load on device 'cuda:0' took 2.72 ms  (cached)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.9e-03, per 5 s: 3.0 gates, 0.00 missed, 0.00 crashes, speed 0.57 m/s
+      PPO 50/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 4.9 gates, 1.37 missed, 0.00 crashes, speed 1.19 m/s
+      PPO 75/900: training score  +3.62 (best design  +3.62), lr 2.8e-03, per 5 s: 8.3 gates, 1.02 missed, 0.00 crashes, speed 1.22 m/s
+      PPO 100/900: training score -110.00 (best design -110.00), lr 2.7e-03, per 5 s: 10.6 gates, 1.24 missed, 0.00 crashes, speed 1.46 m/s
+      PPO 125/900: training score  +7.07 (best design +13.20), lr 2.6e-03, per 5 s: 14.8 gates, 0.66 missed, 0.00 crashes, speed 1.83 m/s
+      PPO 150/900: training score -41.18 (best design +14.82), lr 2.5e-03, per 5 s: 16.0 gates, 1.06 missed, 0.01 crashes, speed 1.99 m/s
+      PPO: 16 designs x 4096 drones, 315 M steps, simulation 2 s, learning 49 s (6.1 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 12.. (8 of 8 still going, 1 designs)
+      PPO 175/900: training score -75.35 (best design -33.75), lr 2.4e-03, per 5 s: 17.9 gates, 0.76 missed, 0.00 crashes, speed 2.20 m/s
+      PPO 200/900: training score  -3.75 (best design +12.00), lr 2.3e-03, per 5 s: 19.2 gates, 1.05 missed, 0.03 crashes, speed 2.54 m/s
+      PPO 225/900: training score -11.08 (best design +21.00), lr 2.3e-03, per 5 s: 21.2 gates, 0.56 missed, 0.01 crashes, speed 2.42 m/s
+      PPO 250/900: training score +14.73 (best design +23.67), lr 2.2e-03, per 5 s: 21.3 gates, 0.42 missed, 0.01 crashes, speed 2.52 m/s
+      PPO 275/900: training score +19.85 (best design +22.06), lr 2.1e-03, per 5 s: 23.4 gates, 0.25 missed, 0.00 crashes, speed 2.62 m/s
+      PPO 300/900: training score +12.82 (best design +24.11), lr 2.0e-03, per 5 s: 22.9 gates, 0.35 missed, 0.01 crashes, speed 2.69 m/s
+      PPO: 8 designs x 4096 drones, 157 M steps, simulation 2 s, learning 28 s (5.2 M steps/s)
+[rl] halving: iterations 300-900 of 900 for trainings 8.. (4 of 4 still going, 1 designs)
+      PPO 325/900: training score  -1.00 (best design +27.00), lr 1.9e-03, per 5 s: 24.3 gates, 0.28 missed, 0.00 crashes, speed 2.78 m/s
+      PPO 350/900: training score +26.00 (best design +27.00), lr 1.8e-03, per 5 s: 24.6 gates, 0.31 missed, 0.00 crashes, speed 2.80 m/s
+      PPO 375/900: training score -135.50 (best design -72.00), lr 1.8e-03, per 5 s: 26.3 gates, 0.33 missed, 0.00 crashes, speed 2.90 m/s
+      PPO 400/900: training score +12.28 (best design +25.60), lr 1.7e-03, per 5 s: 25.3 gates, 0.29 missed, 0.00 crashes, speed 2.92 m/s
+      PPO 425/900: training score +23.80 (best design +24.87), lr 1.6e-03, per 5 s: 27.0 gates, 0.19 missed, 0.00 crashes, speed 2.97 m/s
+      PPO 450/900: training score +21.94 (best design +27.00), lr 1.5e-03, per 5 s: 25.9 gates, 0.26 missed, 0.00 crashes, speed 2.99 m/s
+      PPO 475/900: training score +24.16 (best design +27.00), lr 1.4e-03, per 5 s: 26.3 gates, 0.25 missed, 0.00 crashes, speed 3.00 m/s
+      PPO 500/900: training score +15.00 (best design +15.00), lr 1.3e-03, per 5 s: 27.8 gates, 0.21 missed, 0.00 crashes, speed 3.07 m/s
+      PPO 525/900: training score +24.80 (best design +26.29), lr 1.3e-03, per 5 s: 26.6 gates, 0.20 missed, 0.00 crashes, speed 3.04 m/s
+      PPO 550/900: training score +25.74 (best design +26.14), lr 1.2e-03, per 5 s: 28.3 gates, 0.15 missed, 0.00 crashes, speed 3.09 m/s
+      PPO 575/900: training score +26.92 (best design +28.00), lr 1.1e-03, per 5 s: 27.1 gates, 0.20 missed, 0.00 crashes, speed 3.11 m/s
+      PPO 600/900: training score +27.50 (best design +27.80), lr 1.0e-03, per 5 s: 27.3 gates, 0.15 missed, 0.00 crashes, speed 3.11 m/s
+      PPO 625/900: training score +28.00 (best design +29.00), lr 9.2e-04, per 5 s: 28.7 gates, 0.11 missed, 0.00 crashes, speed 3.15 m/s
+      PPO 650/900: training score +23.72 (best design +28.14), lr 8.4e-04, per 5 s: 27.5 gates, 0.15 missed, 0.00 crashes, speed 3.12 m/s
+      PPO 675/900: training score +27.15 (best design +27.66), lr 7.5e-04, per 5 s: 29.1 gates, 0.10 missed, 0.00 crashes, speed 3.17 m/s
+      PPO 700/900: training score +24.52 (best design +28.67), lr 6.7e-04, per 5 s: 27.9 gates, 0.17 missed, 0.00 crashes, speed 3.20 m/s
+      PPO 725/900: training score +25.67 (best design +28.80), lr 5.9e-04, per 5 s: 28.1 gates, 0.15 missed, 0.00 crashes, speed 3.16 m/s
+      PPO 750/900: training score +28.67 (best design +29.33), lr 5.0e-04, per 5 s: 29.6 gates, 0.13 missed, 0.00 crashes, speed 3.22 m/s
+      PPO 775/900: training score +27.56 (best design +28.45), lr 4.2e-04, per 5 s: 28.3 gates, 0.15 missed, 0.00 crashes, speed 3.20 m/s
+      PPO 800/900: training score +27.86 (best design +28.29), lr 3.4e-04, per 5 s: 29.8 gates, 0.09 missed, 0.00 crashes, speed 3.24 m/s
+      PPO 825/900: training score +27.71 (best design +29.55), lr 2.5e-04, per 5 s: 28.4 gates, 0.13 missed, 0.00 crashes, speed 3.24 m/s
+      PPO 850/900: training score +28.95 (best design +30.00), lr 1.7e-04, per 5 s: 28.5 gates, 0.11 missed, 0.00 crashes, speed 3.18 m/s
+      PPO 875/900: training score +30.12 (best design +30.50), lr 1.5e-04, per 5 s: 30.1 gates, 0.09 missed, 0.00 crashes, speed 3.27 m/s
+      PPO 900/900: training score +28.20 (best design +29.64), lr 1.5e-04, per 5 s: 28.7 gates, 0.11 missed, 0.00 crashes, speed 3.26 m/s
+      PPO: 4 designs x 4096 drones, 315 M steps, simulation 7 s, learning 87 s (3.4 M steps/s)
+[rl] baseline planar: fitness +28.77 (trainings: +28.30, +28.09, +28.77, +28.44), saved /proj/src/build/baseline_policy_taskA_planar_069a037f90.json
+baseline (planar hexarotor): fitness +28.77  (29.4 gates, 0.06 missed, 0.0 % crashes per episode)
+Module newton._src.geometry.bvh 58a3a49 load on device 'cuda:0' took 2474.72 ms  (compiled)
+Module newton._src.sensors.warp_raytrace.camera_utils 4ca4fe3 load on device 'cuda:0' took 2209.09 ms  (compiled)
+Module create_kernel__locals__render_megakernel_2b428d80 5b84d73 load on device 'cuda:0' took 2537.99 ms  (compiled)
+BO batch   0  evaluations   20  best +27.64 (batch best +27.64, median +26.08, 1 cannot hover)  [ 2330 s, 0.65 h]
+[WARNING 11-04 13:59:21] ax.api.client: 20 trials requested but only 1 could be generated.
+BO batch   1  evaluations   40  best +28.06 (batch best +28.06, median -10.00, 10 cannot hover)  [ 1109 s, 0.96 h]
+BO batch   2  evaluations   60  best +29.93 (batch best +29.93, median +24.39, 0 cannot hover)  [ 2128 s, 1.56 h]
+BO batch   3  evaluations   80  best +29.93 (batch best +27.47, median -10.00, 13 cannot hover)  [  889 s, 1.81 h]
+BO batch   4  evaluations  100  best +29.93 (batch best +28.41, median +24.85, 1 cannot hover)  [ 2014 s, 2.37 h]
+BO batch   5  evaluations  120  best +29.93 (batch best +29.39, median +22.61, 7 cannot hover)  [ 1516 s, 2.80 h]
+BO batch   6  evaluations  140  best +30.35 (batch best +30.35, median +26.17, 1 cannot hover)  [ 2019 s, 3.36 h]
+BO batch   7  evaluations  160  best +30.35 (batch best +27.00, median +22.99, 6 cannot hover)  [ 1482 s, 3.78 h]
+BO batch   8  evaluations  180  best +30.35 (batch best +28.54, median +23.54, 2 cannot hover)  [ 1904 s, 4.31 h]
+BO batch   9  evaluations  200  best +30.35 (batch best +28.69, median +24.89, 2 cannot hover)  [ 1911 s, 4.85 h]
+BO batch  10  evaluations  220  best +30.35 (batch best +29.52, median +26.32, 2 cannot hover)  [ 1904 s, 5.38 h]
+BO batch  11  evaluations  240  best +30.35 (batch best +27.85, median +24.81, 0 cannot hover)  [ 2127 s, 5.98 h]
+BO batch  12  evaluations  260  best +30.35 (batch best +28.79, median +26.28, 3 cannot hover)  [ 1874 s, 6.50 h]
+BO batch  13  evaluations  280  best +30.35 (batch best +29.61, median +27.77, 0 cannot hover)  [ 2127 s, 7.09 h]
+BO batch  14  evaluations  300  best +30.35 (batch best +29.80, median +27.47, 0 cannot hover)  [ 2130 s, 7.69 h]
+BO batch  15  evaluations  320  best +30.56 (batch best +30.56, median +27.61, 0 cannot hover)  [ 2129 s, 8.29 h]
+BO batch  16  evaluations  340  best +30.56 (batch best +30.21, median +27.67, 0 cannot hover)  [ 2126 s, 8.88 h]
+BO batch  17  evaluations  360  best +30.99 (batch best +30.99, median +27.73, 0 cannot hover)  [ 2127 s, 9.48 h]
+BO batch  18  evaluations  380  best +30.99 (batch best +30.92, median +27.21, 0 cannot hover)  [ 2126 s, 10.07 h]
+BO batch  19  evaluations  400  best +31.47 (batch best +31.47, median +27.43, 0 cannot hover)  [ 2127 s, 10.67 h]
+      warm start (imitating each design's LQR): 16 s, rms error 0.221
+      warm start (imitating each design's LQR): 17 s, rms error 0.221
+      warm start (imitating each design's LQR): 16 s, rms error 0.221
+      warm start (imitating each design's LQR): 17 s, rms error 0.222
+      warm start (imitating each design's LQR): 16 s, rms error 0.221
+      warm start (imitating each design's LQR): 16 s, rms error 0.222
+      warm start (imitating each design's LQR): 16 s, rms error 0.221
+      warm start (imitating each design's LQR): 16 s, rms error 0.222
+[rl] halving: iterations 0-150 of 900 for trainings 1.. (80 of 640 still going, 40 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.9e-03, per 5 s: 2.7 gates, 0.00 missed, 0.00 crashes, speed 0.47 m/s
+      PPO 50/900: training score -60.81 (best design  -2.00), lr 2.8e-03, per 5 s: 5.2 gates, 1.10 missed, 0.03 crashes, speed 1.40 m/s
+      PPO 75/900: training score -44.67 (best design  +9.00), lr 2.8e-03, per 5 s: 8.2 gates, 2.20 missed, 0.06 crashes, speed 1.25 m/s
+      PPO 100/900: training score -11.66 (best design +17.30), lr 2.7e-03, per 5 s: 10.8 gates, 1.66 missed, 0.02 crashes, speed 1.70 m/s
+      PPO 125/900: training score  +7.87 (best design +18.44), lr 2.6e-03, per 5 s: 15.6 gates, 0.82 missed, 0.01 crashes, speed 1.99 m/s
+      PPO 150/900: training score  +6.22 (best design +22.50), lr 2.5e-03, per 5 s: 17.7 gates, 0.75 missed, 0.01 crashes, speed 2.24 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 81.. (80 of 640 still going, 40 designs)
+      PPO 25/900: training score -19.00 (best design -19.00), lr 2.8e-03, per 5 s: 2.6 gates, 0.00 missed, 0.00 crashes, speed 0.44 m/s
+      PPO 50/900: training score -52.23 (best design -10.00), lr 2.8e-03, per 5 s: 5.0 gates, 1.52 missed, 0.09 crashes, speed 1.38 m/s
+      PPO 75/900: training score -28.78 (best design +12.00), lr 2.8e-03, per 5 s: 8.4 gates, 1.55 missed, 0.05 crashes, speed 1.31 m/s
+      PPO 100/900: training score  -7.94 (best design +14.19), lr 2.7e-03, per 5 s: 11.5 gates, 1.35 missed, 0.04 crashes, speed 1.72 m/s
+      PPO 125/900: training score  +9.98 (best design +16.95), lr 2.6e-03, per 5 s: 16.4 gates, 0.75 missed, 0.03 crashes, speed 2.07 m/s
+      PPO 150/900: training score +12.69 (best design +21.92), lr 2.5e-03, per 5 s: 18.5 gates, 0.66 missed, 0.01 crashes, speed 2.27 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 161.. (80 of 640 still going, 40 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 2.7 gates, 0.00 missed, 0.00 crashes, speed 0.43 m/s
+      PPO 50/900: training score -45.81 (best design -10.00), lr 2.8e-03, per 5 s: 5.3 gates, 0.76 missed, 0.02 crashes, speed 1.50 m/s
+      PPO 75/900: training score -38.76 (best design +11.33), lr 2.8e-03, per 5 s: 8.6 gates, 2.04 missed, 0.09 crashes, speed 1.37 m/s
+      PPO 100/900: training score -14.85 (best design +18.00), lr 2.7e-03, per 5 s: 12.2 gates, 1.30 missed, 0.03 crashes, speed 1.76 m/s
+      PPO 125/900: training score  +9.75 (best design +19.35), lr 2.6e-03, per 5 s: 17.3 gates, 0.79 missed, 0.01 crashes, speed 2.17 m/s
+      PPO 150/900: training score  +9.50 (best design +22.00), lr 2.5e-03, per 5 s: 19.1 gates, 0.74 missed, 0.07 crashes, speed 2.41 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 241.. (80 of 640 still going, 40 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.6e-03, per 5 s: 2.6 gates, 0.00 missed, 0.00 crashes, speed 0.44 m/s
+      PPO 50/900: training score -55.67 (best design -23.33), lr 2.8e-03, per 5 s: 5.3 gates, 0.95 missed, 0.04 crashes, speed 1.43 m/s
+      PPO 75/900: training score -30.64 (best design +12.00), lr 2.8e-03, per 5 s: 8.3 gates, 2.08 missed, 0.07 crashes, speed 1.33 m/s
+      PPO 100/900: training score  -4.87 (best design +16.00), lr 2.7e-03, per 5 s: 12.0 gates, 1.26 missed, 0.02 crashes, speed 1.77 m/s
+      PPO 125/900: training score +10.33 (best design +18.63), lr 2.6e-03, per 5 s: 17.2 gates, 0.75 missed, 0.01 crashes, speed 2.15 m/s
+      PPO 150/900: training score +13.06 (best design +22.92), lr 2.5e-03, per 5 s: 19.3 gates, 0.68 missed, 0.00 crashes, speed 2.39 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 321.. (80 of 640 still going, 40 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 2.8 gates, 0.00 missed, 0.00 crashes, speed 0.46 m/s
+      PPO 50/900: training score -44.19 (best design -19.00), lr 2.7e-03, per 5 s: 5.4 gates, 0.96 missed, 0.04 crashes, speed 1.47 m/s
+      PPO 75/900: training score -40.62 (best design +10.43), lr 2.8e-03, per 5 s: 8.6 gates, 1.68 missed, 0.06 crashes, speed 1.36 m/s
+      PPO 100/900: training score -10.56 (best design +19.50), lr 2.7e-03, per 5 s: 11.9 gates, 1.40 missed, 0.03 crashes, speed 1.73 m/s
+      PPO 125/900: training score  +9.60 (best design +17.87), lr 2.6e-03, per 5 s: 16.7 gates, 0.81 missed, 0.02 crashes, speed 2.08 m/s
+      PPO 150/900: training score  +9.10 (best design +21.27), lr 2.5e-03, per 5 s: 18.8 gates, 0.62 missed, 0.00 crashes, speed 2.33 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 401.. (80 of 640 still going, 40 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 2.7 gates, 0.00 missed, 0.00 crashes, speed 0.45 m/s
+      PPO 50/900: training score -46.25 (best design -30.00), lr 2.8e-03, per 5 s: 5.2 gates, 0.99 missed, 0.01 crashes, speed 1.44 m/s
+      PPO 75/900: training score -31.42 (best design +13.00), lr 2.8e-03, per 5 s: 8.5 gates, 1.76 missed, 0.06 crashes, speed 1.32 m/s
+      PPO 100/900: training score  -7.57 (best design +19.00), lr 2.7e-03, per 5 s: 11.9 gates, 1.27 missed, 0.03 crashes, speed 1.76 m/s
+      PPO 125/900: training score  +7.93 (best design +18.08), lr 2.6e-03, per 5 s: 16.7 gates, 0.82 missed, 0.09 crashes, speed 2.13 m/s
+      PPO 150/900: training score  +8.32 (best design +21.16), lr 2.5e-03, per 5 s: 18.6 gates, 0.70 missed, 0.08 crashes, speed 2.35 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 481.. (80 of 640 still going, 40 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 2.6 gates, 0.00 missed, 0.00 crashes, speed 0.45 m/s
+      PPO 50/900: training score -48.38 (best design  +8.00), lr 2.8e-03, per 5 s: 5.1 gates, 1.07 missed, 0.05 crashes, speed 1.44 m/s
+      PPO 75/900: training score -30.48 (best design +14.00), lr 2.8e-03, per 5 s: 8.5 gates, 1.81 missed, 0.07 crashes, speed 1.35 m/s
+      PPO 100/900: training score  -7.90 (best design +16.00), lr 2.7e-03, per 5 s: 11.8 gates, 1.33 missed, 0.03 crashes, speed 1.70 m/s
+      PPO 125/900: training score +10.24 (best design +19.13), lr 2.6e-03, per 5 s: 16.9 gates, 0.61 missed, 0.01 crashes, speed 2.10 m/s
+      PPO 150/900: training score  +7.55 (best design +21.24), lr 2.5e-03, per 5 s: 18.7 gates, 0.76 missed, 0.01 crashes, speed 2.34 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 561.. (80 of 640 still going, 40 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 2.7 gates, 0.00 missed, 0.00 crashes, speed 0.44 m/s
+      PPO 50/900: training score -58.61 (best design -20.00), lr 2.8e-03, per 5 s: 5.1 gates, 1.08 missed, 0.02 crashes, speed 1.40 m/s
+      PPO 75/900: training score -38.32 (best design +13.00), lr 2.7e-03, per 5 s: 8.3 gates, 1.90 missed, 0.05 crashes, speed 1.35 m/s
+      PPO 100/900: training score  -6.08 (best design +14.67), lr 2.7e-03, per 5 s: 11.3 gates, 1.07 missed, 0.03 crashes, speed 1.67 m/s
+      PPO 125/900: training score  +8.85 (best design +16.99), lr 2.6e-03, per 5 s: 16.1 gates, 0.71 missed, 0.01 crashes, speed 2.03 m/s
+      PPO 150/900: training score +10.47 (best design +20.81), lr 2.5e-03, per 5 s: 18.2 gates, 0.74 missed, 0.01 crashes, speed 2.29 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 9.. (80 of 320 still going, 40 designs)
+      PPO 175/900: training score -57.28 (best design +17.25), lr 2.4e-03, per 5 s: 21.5 gates, 0.70 missed, 0.01 crashes, speed 2.65 m/s
+      PPO 200/900: training score  +3.94 (best design +28.00), lr 2.3e-03, per 5 s: 22.7 gates, 0.71 missed, 0.01 crashes, speed 2.82 m/s
+      PPO 225/900: training score  -2.29 (best design +27.50), lr 2.3e-03, per 5 s: 25.3 gates, 0.51 missed, 0.01 crashes, speed 2.85 m/s
+      PPO 250/900: training score +16.24 (best design +29.00), lr 2.2e-03, per 5 s: 24.6 gates, 0.43 missed, 0.00 crashes, speed 2.90 m/s
+      PPO 275/900: training score +22.81 (best design +26.68), lr 2.1e-03, per 5 s: 27.1 gates, 0.31 missed, 0.00 crashes, speed 2.99 m/s
+      PPO 300/900: training score +18.09 (best design +31.00), lr 2.0e-03, per 5 s: 25.9 gates, 0.33 missed, 0.00 crashes, speed 3.04 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 169.. (80 of 320 still going, 40 designs)
+      PPO 175/900: training score -64.36 (best design +24.00), lr 2.4e-03, per 5 s: 22.1 gates, 0.63 missed, 0.01 crashes, speed 2.72 m/s
+      PPO 200/900: training score  +8.69 (best design +27.00), lr 2.3e-03, per 5 s: 23.3 gates, 0.73 missed, 0.01 crashes, speed 2.85 m/s
+      PPO 225/900: training score -18.19 (best design +28.00), lr 2.3e-03, per 5 s: 25.7 gates, 0.52 missed, 0.01 crashes, speed 2.89 m/s
+      PPO 250/900: training score +16.32 (best design +28.00), lr 2.2e-03, per 5 s: 25.0 gates, 0.44 missed, 0.00 crashes, speed 2.95 m/s
+      PPO 275/900: training score +23.14 (best design +27.21), lr 2.1e-03, per 5 s: 27.4 gates, 0.32 missed, 0.00 crashes, speed 3.04 m/s
+      PPO 300/900: training score +20.61 (best design +31.00), lr 2.0e-03, per 5 s: 26.1 gates, 0.34 missed, 0.03 crashes, speed 3.07 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 329.. (80 of 320 still going, 40 designs)
+      PPO 175/900: training score -54.24 (best design +22.00), lr 2.4e-03, per 5 s: 21.8 gates, 0.59 missed, 0.00 crashes, speed 2.66 m/s
+      PPO 200/900: training score  +2.42 (best design +27.00), lr 2.3e-03, per 5 s: 22.9 gates, 0.69 missed, 0.01 crashes, speed 2.84 m/s
+      PPO 225/900: training score  +6.88 (best design +28.00), lr 2.3e-03, per 5 s: 25.5 gates, 0.48 missed, 0.01 crashes, speed 2.86 m/s
+      PPO 250/900: training score +14.59 (best design +26.50), lr 2.2e-03, per 5 s: 24.8 gates, 0.41 missed, 0.00 crashes, speed 2.92 m/s
+      PPO 275/900: training score +23.01 (best design +26.70), lr 2.1e-03, per 5 s: 27.2 gates, 0.31 missed, 0.00 crashes, speed 3.02 m/s
+      PPO 300/900: training score +16.23 (best design +29.50), lr 2.0e-03, per 5 s: 26.2 gates, 0.35 missed, 0.00 crashes, speed 3.06 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 486.. (80 of 320 still going, 40 designs)
+      PPO 175/900: training score -53.99 (best design +24.00), lr 2.4e-03, per 5 s: 21.6 gates, 0.66 missed, 0.01 crashes, speed 2.67 m/s
+      PPO 200/900: training score  +7.23 (best design +25.67), lr 2.3e-03, per 5 s: 22.8 gates, 0.67 missed, 0.01 crashes, speed 2.83 m/s
+      PPO 225/900: training score  -3.81 (best design +27.00), lr 2.3e-03, per 5 s: 25.2 gates, 0.52 missed, 0.01 crashes, speed 2.84 m/s
+      PPO 250/900: training score +18.29 (best design +30.00), lr 2.2e-03, per 5 s: 24.6 gates, 0.41 missed, 0.00 crashes, speed 2.90 m/s
+      PPO 275/900: training score +22.82 (best design +26.78), lr 2.1e-03, per 5 s: 27.0 gates, 0.31 missed, 0.00 crashes, speed 2.99 m/s
+      PPO 300/900: training score +19.39 (best design +29.38), lr 2.0e-03, per 5 s: 25.9 gates, 0.34 missed, 0.00 crashes, speed 3.03 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 300-900 of 900 for trainings 15.. (80 of 160 still going, 40 designs)
+      PPO 325/900: training score -28.88 (best design +28.75), lr 1.9e-03, per 5 s: 27.0 gates, 0.27 missed, 0.00 crashes, speed 3.16 m/s
+      PPO 350/900: training score  +6.44 (best design +27.50), lr 1.8e-03, per 5 s: 27.4 gates, 0.33 missed, 0.00 crashes, speed 3.26 m/s
+      PPO 375/900: training score  +7.00 (best design +30.00), lr 1.8e-03, per 5 s: 29.5 gates, 0.29 missed, 0.00 crashes, speed 3.23 m/s
+      PPO 400/900: training score +17.44 (best design +32.00), lr 1.7e-03, per 5 s: 28.0 gates, 0.27 missed, 0.00 crashes, speed 3.25 m/s
+      PPO 425/900: training score +26.74 (best design +29.16), lr 1.6e-03, per 5 s: 30.0 gates, 0.22 missed, 0.00 crashes, speed 3.28 m/s
+      PPO 450/900: training score +21.41 (best design +31.67), lr 1.5e-03, per 5 s: 28.4 gates, 0.25 missed, 0.00 crashes, speed 3.30 m/s
+      PPO 475/900: training score +25.25 (best design +33.00), lr 1.4e-03, per 5 s: 28.8 gates, 0.22 missed, 0.00 crashes, speed 3.39 m/s
+      PPO 500/900: training score +20.93 (best design +32.00), lr 1.3e-03, per 5 s: 30.7 gates, 0.20 missed, 0.00 crashes, speed 3.35 m/s
+      PPO 525/900: training score +24.77 (best design +31.56), lr 1.3e-03, per 5 s: 29.1 gates, 0.22 missed, 0.00 crashes, speed 3.36 m/s
+      PPO 550/900: training score +27.99 (best design +29.99), lr 1.2e-03, per 5 s: 31.2 gates, 0.21 missed, 0.00 crashes, speed 3.41 m/s
+      PPO 575/900: training score +25.61 (best design +32.20), lr 1.1e-03, per 5 s: 29.6 gates, 0.23 missed, 0.00 crashes, speed 3.42 m/s
+      PPO 600/900: training score +25.75 (best design +33.00), lr 1.0e-03, per 5 s: 29.8 gates, 0.21 missed, 0.00 crashes, speed 3.50 m/s
+      PPO 625/900: training score +23.03 (best design +33.00), lr 9.2e-04, per 5 s: 31.5 gates, 0.19 missed, 0.00 crashes, speed 3.43 m/s
+      PPO 650/900: training score +26.60 (best design +32.25), lr 8.4e-04, per 5 s: 29.9 gates, 0.20 missed, 0.00 crashes, speed 3.42 m/s
+      PPO 675/900: training score +29.04 (best design +30.90), lr 7.5e-04, per 5 s: 31.8 gates, 0.17 missed, 0.00 crashes, speed 3.46 m/s
+      PPO 700/900: training score +26.19 (best design +33.50), lr 6.7e-04, per 5 s: 30.2 gates, 0.18 missed, 0.00 crashes, speed 3.47 m/s
+      PPO 725/900: training score +29.37 (best design +33.75), lr 5.9e-04, per 5 s: 30.3 gates, 0.17 missed, 0.00 crashes, speed 3.56 m/s
+      PPO 750/900: training score +27.69 (best design +34.00), lr 5.0e-04, per 5 s: 32.1 gates, 0.16 missed, 0.00 crashes, speed 3.48 m/s
+      PPO 775/900: training score +28.91 (best design +32.20), lr 4.2e-04, per 5 s: 30.4 gates, 0.16 missed, 0.00 crashes, speed 3.46 m/s
+      PPO 800/900: training score +29.83 (best design +31.24), lr 3.4e-04, per 5 s: 32.3 gates, 0.14 missed, 0.00 crashes, speed 3.50 m/s
+      PPO 825/900: training score +28.73 (best design +33.33), lr 2.5e-04, per 5 s: 30.6 gates, 0.14 missed, 0.00 crashes, speed 3.50 m/s
+      PPO 850/900: training score +30.32 (best design +34.00), lr 1.7e-04, per 5 s: 30.7 gates, 0.14 missed, 0.00 crashes, speed 3.59 m/s
+      PPO 875/900: training score +29.16 (best design +33.50), lr 1.5e-04, per 5 s: 32.5 gates, 0.13 missed, 0.00 crashes, speed 3.52 m/s
+      PPO 900/900: training score +29.83 (best design +33.25), lr 1.5e-04, per 5 s: 30.8 gates, 0.13 missed, 0.00 crashes, speed 3.49 m/s
+      PPO: 80 designs x 4096 drones, 6291 M steps, simulation 64 s, learning 757 s (7.7 M steps/s)
+[rl] halving: iterations 300-900 of 900 for trainings 329.. (80 of 160 still going, 40 designs)
+      PPO 325/900: training score -18.48 (best design +29.00), lr 1.9e-03, per 5 s: 26.9 gates, 0.28 missed, 0.00 crashes, speed 3.14 m/s
+      PPO 350/900: training score +10.78 (best design +29.67), lr 1.8e-03, per 5 s: 27.3 gates, 0.28 missed, 0.00 crashes, speed 3.23 m/s
+      PPO 375/900: training score +15.28 (best design +32.00), lr 1.8e-03, per 5 s: 29.4 gates, 0.27 missed, 0.00 crashes, speed 3.22 m/s
+      PPO 400/900: training score +18.95 (best design +30.22), lr 1.7e-03, per 5 s: 27.9 gates, 0.24 missed, 0.00 crashes, speed 3.23 m/s
+      PPO 425/900: training score +26.83 (best design +29.68), lr 1.6e-03, per 5 s: 30.1 gates, 0.21 missed, 0.00 crashes, speed 3.29 m/s
+      PPO 450/900: training score +19.23 (best design +31.00), lr 1.5e-03, per 5 s: 28.5 gates, 0.25 missed, 0.00 crashes, speed 3.31 m/s
+      PPO 475/900: training score +24.23 (best design +31.00), lr 1.4e-03, per 5 s: 28.9 gates, 0.23 missed, 0.00 crashes, speed 3.40 m/s
+      PPO 500/900: training score +21.49 (best design +32.20), lr 1.3e-03, per 5 s: 30.8 gates, 0.21 missed, 0.00 crashes, speed 3.36 m/s
+      PPO 525/900: training score +25.51 (best design +33.00), lr 1.3e-03, per 5 s: 29.2 gates, 0.21 missed, 0.00 crashes, speed 3.35 m/s
+      PPO 550/900: training score +28.34 (best design +30.26), lr 1.2e-03, per 5 s: 31.2 gates, 0.18 missed, 0.00 crashes, speed 3.40 m/s
+      PPO 575/900: training score +25.10 (best design +33.33), lr 1.1e-03, per 5 s: 29.6 gates, 0.19 missed, 0.00 crashes, speed 3.40 m/s
+      PPO 600/900: training score +26.56 (best design +32.00), lr 1.0e-03, per 5 s: 29.8 gates, 0.18 missed, 0.00 crashes, speed 3.50 m/s
+      PPO 625/900: training score +26.29 (best design +33.00), lr 9.2e-04, per 5 s: 31.6 gates, 0.18 missed, 0.00 crashes, speed 3.44 m/s
+      PPO 650/900: training score +27.53 (best design +32.37), lr 8.4e-04, per 5 s: 30.0 gates, 0.18 missed, 0.00 crashes, speed 3.42 m/s
+      PPO 675/900: training score +29.29 (best design +31.16), lr 7.5e-04, per 5 s: 31.9 gates, 0.15 missed, 0.00 crashes, speed 3.46 m/s
+      PPO 700/900: training score +27.28 (best design +33.12), lr 6.7e-04, per 5 s: 30.2 gates, 0.17 missed, 0.00 crashes, speed 3.47 m/s
+      PPO 725/900: training score +29.24 (best design +33.00), lr 5.9e-04, per 5 s: 30.4 gates, 0.16 missed, 0.00 crashes, speed 3.56 m/s
+      PPO 750/900: training score +26.75 (best design +34.50), lr 5.0e-04, per 5 s: 32.1 gates, 0.15 missed, 0.00 crashes, speed 3.49 m/s
+      PPO 775/900: training score +29.16 (best design +31.78), lr 4.2e-04, per 5 s: 30.6 gates, 0.16 missed, 0.00 crashes, speed 3.47 m/s
+      PPO 800/900: training score +29.92 (best design +31.40), lr 3.4e-04, per 5 s: 32.4 gates, 0.14 missed, 0.00 crashes, speed 3.51 m/s
+      PPO 825/900: training score +28.46 (best design +32.78), lr 2.5e-04, per 5 s: 30.7 gates, 0.14 missed, 0.00 crashes, speed 3.51 m/s
+      PPO 850/900: training score +29.94 (best design +33.33), lr 1.7e-04, per 5 s: 30.8 gates, 0.13 missed, 0.00 crashes, speed 3.61 m/s
+      PPO 875/900: training score +27.98 (best design +34.33), lr 1.5e-04, per 5 s: 32.5 gates, 0.12 missed, 0.00 crashes, speed 3.52 m/s
+      PPO 900/900: training score +29.99 (best design +33.00), lr 1.5e-04, per 5 s: 30.9 gates, 0.13 missed, 0.00 crashes, speed 3.49 m/s
+      PPO: 80 designs x 4096 drones, 6291 M steps, simulation 64 s, learning 757 s (7.7 M steps/s)
+re-evaluation after the BO (8 halvings each, picked policy on 40960 episodes; 4253 s):
+   #1 of the BO                 before +31.47   now +31.44 +- 0.19, max +31.77  (+31.2, +31.8, +31.4, +31.3, +31.4, +31.7, +31.5, +31.3)
+   #2 of the BO                 before +30.99   now +31.18 +- 0.36, max +31.78  (+31.4, +30.9, +30.6, +31.3, +31.4, +30.8, +31.8, +31.1)
+   #3 of the BO                 before +30.92   now +30.95 +- 0.26, max +31.35  (+31.1, +30.7, +31.4, +30.9, +30.7, +31.3, +30.7, +30.8)
+   #4 of the BO                 before +30.56   now +30.82 +- 0.37, max +31.37  (+30.3, +30.8, +30.6, +30.7, +30.5, +31.0, +31.4, +31.3)
+   #5 of the BO                 before +30.36   now +30.41 +- 0.22, max +30.84  (+30.2, +30.8, +30.1, +30.5, +30.3, +30.3, +30.4, +30.6)
+CMA-ES batch  21  evaluations  420  best +31.77 (batch best +31.77, median +29.75, 0 cannot hover)  [ 2126 s, 12.44 h]
+
+== resumed 2026-11-05 10:26 (evolve.py --resume)
+[rl] training the controllers of the baselines planar (sequential halving ((16, 0), (8, 150), (4, 300)), 900 PPO iterations)
+      warm start (imitating each design's LQR): 8 s, rms error 0.229
+[rl] halving: iterations 0-150 of 900 for trainings 1.. (16 of 16 still going, 1 designs)
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.2
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5090" (31 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /proj/build/warp_cache/1.18.0
+Module validate_and_correct_inertia_kernel_1ff2ac62 1ff2ac6 load on device 'cuda:0' took 37.33 ms  (cached)
+Module sim 3c5560f load on device 'cuda:0' took 14.24 ms  (cached)
+Module newton._src.solvers.solver d7b7ff4 load on device 'cuda:0' took 24.99 ms  (cached)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.9e-03, per 5 s: 3.0 gates, 0.00 missed, 0.00 crashes, speed 0.57 m/s
+      PPO 50/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 4.9 gates, 1.37 missed, 0.00 crashes, speed 1.19 m/s
+      PPO 75/900: training score  +3.62 (best design  +3.62), lr 2.8e-03, per 5 s: 8.3 gates, 1.02 missed, 0.00 crashes, speed 1.22 m/s
+      PPO 100/900: training score -110.00 (best design -110.00), lr 2.7e-03, per 5 s: 10.6 gates, 1.24 missed, 0.00 crashes, speed 1.46 m/s
+      PPO 125/900: training score  +7.07 (best design +13.20), lr 2.6e-03, per 5 s: 14.8 gates, 0.66 missed, 0.00 crashes, speed 1.83 m/s
+      PPO 150/900: training score -41.18 (best design +14.82), lr 2.5e-03, per 5 s: 16.0 gates, 1.06 missed, 0.01 crashes, speed 1.99 m/s
+      PPO: 16 designs x 4096 drones, 315 M steps, simulation 2 s, learning 50 s (6.1 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 12.. (8 of 8 still going, 1 designs)
+      PPO 175/900: training score -75.35 (best design -33.75), lr 2.4e-03, per 5 s: 17.9 gates, 0.76 missed, 0.00 crashes, speed 2.20 m/s
+      PPO 200/900: training score  -3.75 (best design +12.00), lr 2.3e-03, per 5 s: 19.2 gates, 1.05 missed, 0.03 crashes, speed 2.54 m/s
+      PPO 225/900: training score -11.08 (best design +21.00), lr 2.3e-03, per 5 s: 21.2 gates, 0.56 missed, 0.01 crashes, speed 2.42 m/s
+      PPO 250/900: training score +14.73 (best design +23.67), lr 2.2e-03, per 5 s: 21.3 gates, 0.42 missed, 0.01 crashes, speed 2.52 m/s
+      PPO 275/900: training score +19.85 (best design +22.06), lr 2.1e-03, per 5 s: 23.4 gates, 0.25 missed, 0.00 crashes, speed 2.62 m/s
+      PPO 300/900: training score +12.82 (best design +24.11), lr 2.0e-03, per 5 s: 22.9 gates, 0.35 missed, 0.01 crashes, speed 2.69 m/s
+      PPO: 8 designs x 4096 drones, 157 M steps, simulation 2 s, learning 28 s (5.2 M steps/s)
+[rl] halving: iterations 300-900 of 900 for trainings 8.. (4 of 4 still going, 1 designs)
+      PPO 325/900: training score  -1.00 (best design +27.00), lr 1.9e-03, per 5 s: 24.3 gates, 0.28 missed, 0.00 crashes, speed 2.78 m/s
+      PPO 350/900: training score +26.00 (best design +27.00), lr 1.8e-03, per 5 s: 24.6 gates, 0.31 missed, 0.00 crashes, speed 2.80 m/s
+      PPO 375/900: training score -135.50 (best design -72.00), lr 1.8e-03, per 5 s: 26.3 gates, 0.33 missed, 0.00 crashes, speed 2.90 m/s
+      PPO 400/900: training score +12.28 (best design +25.60), lr 1.7e-03, per 5 s: 25.3 gates, 0.29 missed, 0.00 crashes, speed 2.92 m/s
+      PPO 425/900: training score +23.80 (best design +24.87), lr 1.6e-03, per 5 s: 27.0 gates, 0.19 missed, 0.00 crashes, speed 2.97 m/s
+      PPO 450/900: training score +21.94 (best design +27.00), lr 1.5e-03, per 5 s: 25.9 gates, 0.26 missed, 0.00 crashes, speed 2.99 m/s
+      PPO 475/900: training score +24.16 (best design +27.00), lr 1.4e-03, per 5 s: 26.3 gates, 0.25 missed, 0.00 crashes, speed 3.00 m/s
+      PPO 500/900: training score +15.00 (best design +15.00), lr 1.3e-03, per 5 s: 27.8 gates, 0.21 missed, 0.00 crashes, speed 3.07 m/s
+      PPO 525/900: training score +24.80 (best design +26.29), lr 1.3e-03, per 5 s: 26.6 gates, 0.20 missed, 0.00 crashes, speed 3.04 m/s
+      PPO 550/900: training score +25.74 (best design +26.14), lr 1.2e-03, per 5 s: 28.3 gates, 0.15 missed, 0.00 crashes, speed 3.09 m/s
+      PPO 575/900: training score +26.92 (best design +28.00), lr 1.1e-03, per 5 s: 27.1 gates, 0.20 missed, 0.00 crashes, speed 3.11 m/s
+      PPO 600/900: training score +27.50 (best design +27.80), lr 1.0e-03, per 5 s: 27.3 gates, 0.15 missed, 0.00 crashes, speed 3.11 m/s
+      PPO 625/900: training score +28.00 (best design +29.00), lr 9.2e-04, per 5 s: 28.7 gates, 0.11 missed, 0.00 crashes, speed 3.15 m/s
+      PPO 650/900: training score +23.72 (best design +28.14), lr 8.4e-04, per 5 s: 27.5 gates, 0.15 missed, 0.00 crashes, speed 3.12 m/s
+      PPO 675/900: training score +27.15 (best design +27.66), lr 7.5e-04, per 5 s: 29.1 gates, 0.10 missed, 0.00 crashes, speed 3.17 m/s
+      PPO 700/900: training score +24.52 (best design +28.67), lr 6.7e-04, per 5 s: 27.9 gates, 0.17 missed, 0.00 crashes, speed 3.20 m/s
+      PPO 725/900: training score +25.67 (best design +28.80), lr 5.9e-04, per 5 s: 28.1 gates, 0.15 missed, 0.00 crashes, speed 3.16 m/s
+      PPO 750/900: training score +28.67 (best design +29.33), lr 5.0e-04, per 5 s: 29.6 gates, 0.13 missed, 0.00 crashes, speed 3.22 m/s
+      PPO 775/900: training score +27.56 (best design +28.45), lr 4.2e-04, per 5 s: 28.3 gates, 0.15 missed, 0.00 crashes, speed 3.20 m/s
+      PPO 800/900: training score +27.86 (best design +28.29), lr 3.4e-04, per 5 s: 29.8 gates, 0.09 missed, 0.00 crashes, speed 3.24 m/s
+      PPO 825/900: training score +27.71 (best design +29.55), lr 2.5e-04, per 5 s: 28.4 gates, 0.13 missed, 0.00 crashes, speed 3.24 m/s
+      PPO 850/900: training score +28.95 (best design +30.00), lr 1.7e-04, per 5 s: 28.5 gates, 0.11 missed, 0.00 crashes, speed 3.18 m/s
+      PPO 875/900: training score +30.12 (best design +30.50), lr 1.5e-04, per 5 s: 30.1 gates, 0.09 missed, 0.00 crashes, speed 3.27 m/s
+      PPO 900/900: training score +28.20 (best design +29.64), lr 1.5e-04, per 5 s: 28.7 gates, 0.11 missed, 0.00 crashes, speed 3.26 m/s
+      PPO: 4 designs x 4096 drones, 315 M steps, simulation 6 s, learning 87 s (3.4 M steps/s)
+[rl] baseline planar: fitness +28.77 (trainings: +28.30, +28.09, +28.77, +28.44), saved /proj/src/build/baseline_policy_taskA_planar_069a037f90.json
+baseline (planar hexarotor): fitness +28.77  (29.4 gates, 0.06 missed, 0.0 % crashes per episode)
+Module newton._src.geometry.bvh 58a3a49 load on device 'cuda:0' took 10.83 ms  (cached)
+Module newton._src.sensors.warp_raytrace.camera_utils 4ca4fe3 load on device 'cuda:0' took 32.72 ms  (cached)
+Module create_kernel__locals__render_megakernel_2b428d80 5b84d73 load on device 'cuda:0' took 25.93 ms  (cached)
+resuming /proj/results/task_A: 420 evaluations, best +31.77, 12.44 h already used
+CMA-ES batch  22  evaluations  440  best +32.23 (batch best +32.23, median +30.29, 0 cannot hover)  [ 2215 s, 13.05 h]
+CMA-ES batch  23  evaluations  460  best +32.23 (batch best +31.81, median +29.79, 0 cannot hover)  [ 2123 s, 13.64 h]
+CMA-ES batch  24  evaluations  480  best +32.23 (batch best +32.02, median +30.25, 0 cannot hover)  [ 2124 s, 14.23 h]
+CMA-ES batch  25  evaluations  500  best +32.23 (batch best +32.18, median +30.60, 0 cannot hover)  [ 2124 s, 14.82 h]
+CMA-ES batch  26  evaluations  520  best +32.23 (batch best +31.41, median +30.48, 0 cannot hover)  [ 2125 s, 15.41 h]
+CMA-ES batch  27  evaluations  540  best +32.23 (batch best +31.90, median +30.24, 0 cannot hover)  [ 2124 s, 16.00 h]
+CMA-ES batch  28  evaluations  560  best +32.23 (batch best +31.99, median +30.78, 0 cannot hover)  [ 2125 s, 16.59 h]
+CMA-ES batch  29  evaluations  580  best +32.23 (batch best +32.01, median +30.91, 0 cannot hover)  [ 2125 s, 17.18 h]
+CMA-ES batch  30  evaluations  600  best +32.23 (batch best +31.96, median +31.26, 0 cannot hover)  [ 2126 s, 17.77 h]
+CMA-ES batch  31  evaluations  620  best +32.30 (batch best +32.30, median +31.30, 0 cannot hover)  [ 2125 s, 18.36 h]
+CMA-ES batch  32  evaluations  640  best +32.30 (batch best +31.98, median +31.02, 0 cannot hover)  [ 2124 s, 18.96 h]
+CMA-ES batch  33  evaluations  660  best +32.30 (batch best +32.19, median +30.81, 0 cannot hover)  [ 2125 s, 19.55 h]
+CMA-ES batch  34  evaluations  680  best +32.30 (batch best +32.19, median +31.32, 0 cannot hover)  [ 2126 s, 20.14 h]
+CMA-ES batch  35  evaluations  700  best +32.55 (batch best +32.55, median +31.73, 0 cannot hover)  [ 2125 s, 20.73 h]
+CMA-ES batch  36  evaluations  720  best +32.64 (batch best +32.64, median +31.63, 0 cannot hover)  [ 2124 s, 21.32 h]
+CMA-ES batch  37  evaluations  740  best +32.64 (batch best +32.57, median +32.06, 0 cannot hover)  [ 2126 s, 21.91 h]
+CMA-ES batch  38  evaluations  760  best +32.64 (batch best +32.56, median +32.03, 0 cannot hover)  [ 2124 s, 22.50 h]
+CMA-ES batch  39  evaluations  780  best +32.64 (batch best +32.39, median +31.72, 0 cannot hover)  [ 2124 s, 23.09 h]
+CMA-ES batch  40  evaluations  800  best +33.06 (batch best +33.06, median +32.01, 0 cannot hover)  [ 2126 s, 23.68 h]
+      warm start (imitating each design's LQR): 16 s, rms error 0.218
+      warm start (imitating each design's LQR): 15 s, rms error 0.228
+      warm start (imitating each design's LQR): 16 s, rms error 0.218
+      warm start (imitating each design's LQR): 16 s, rms error 0.228
+      warm start (imitating each design's LQR): 16 s, rms error 0.218
+      warm start (imitating each design's LQR): 16 s, rms error 0.228
+      warm start (imitating each design's LQR): 17 s, rms error 0.218
+      warm start (imitating each design's LQR): 16 s, rms error 0.228
+      warm start (imitating each design's LQR): 16 s, rms error 0.219
+      warm start (imitating each design's LQR): 16 s, rms error 0.228
+      warm start (imitating each design's LQR): 16 s, rms error 0.218
+      warm start (imitating each design's LQR): 16 s, rms error 0.229
+      warm start (imitating each design's LQR): 16 s, rms error 0.219
+      warm start (imitating each design's LQR): 16 s, rms error 0.228
+      warm start (imitating each design's LQR): 16 s, rms error 0.218
+      warm start (imitating each design's LQR): 16 s, rms error 0.228
+[rl] halving: iterations 0-150 of 900 for trainings 1.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score -38.00 (best design -38.00), lr 2.9e-03, per 5 s: 2.6 gates, 0.00 missed, 0.00 crashes, speed 0.42 m/s
+      PPO 50/900: training score -58.53 (best design  +4.00), lr 2.8e-03, per 5 s: 5.0 gates, 1.50 missed, 0.12 crashes, speed 1.28 m/s
+      PPO 75/900: training score -40.63 (best design +12.00), lr 2.8e-03, per 5 s: 8.2 gates, 1.67 missed, 0.09 crashes, speed 1.31 m/s
+      PPO 100/900: training score  +1.16 (best design +15.69), lr 2.7e-03, per 5 s: 11.6 gates, 1.11 missed, 0.02 crashes, speed 1.71 m/s
+      PPO 125/900: training score +12.11 (best design +18.45), lr 2.6e-03, per 5 s: 16.9 gates, 0.62 missed, 0.06 crashes, speed 2.16 m/s
+      PPO 150/900: training score +14.73 (best design +23.50), lr 2.5e-03, per 5 s: 19.5 gates, 0.47 missed, 0.07 crashes, speed 2.44 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 81.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 3.0 gates, 0.00 missed, 0.00 crashes, speed 0.48 m/s
+      PPO 50/900: training score -42.68 (best design -33.33), lr 2.8e-03, per 5 s: 5.2 gates, 1.37 missed, 0.03 crashes, speed 1.27 m/s
+      PPO 75/900: training score -49.58 (best design +12.00), lr 2.8e-03, per 5 s: 8.8 gates, 1.62 missed, 0.04 crashes, speed 1.35 m/s
+      PPO 100/900: training score -14.43 (best design +15.16), lr 2.7e-03, per 5 s: 12.0 gates, 1.43 missed, 0.02 crashes, speed 1.72 m/s
+      PPO 125/900: training score  +8.05 (best design +16.83), lr 2.6e-03, per 5 s: 16.5 gates, 0.91 missed, 0.01 crashes, speed 2.04 m/s
+      PPO 150/900: training score -13.51 (best design +23.20), lr 2.5e-03, per 5 s: 17.8 gates, 0.93 missed, 0.07 crashes, speed 2.28 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 161.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 2.6 gates, 0.00 missed, 0.00 crashes, speed 0.45 m/s
+      PPO 50/900: training score -76.63 (best design  +5.50), lr 2.8e-03, per 5 s: 5.1 gates, 2.37 missed, 0.19 crashes, speed 1.35 m/s
+      PPO 75/900: training score -24.13 (best design  +9.69), lr 2.8e-03, per 5 s: 7.9 gates, 2.05 missed, 0.13 crashes, speed 1.31 m/s
+      PPO 100/900: training score  +1.12 (best design +14.60), lr 2.7e-03, per 5 s: 12.1 gates, 1.05 missed, 0.03 crashes, speed 1.74 m/s
+      PPO 125/900: training score +13.08 (best design +20.75), lr 2.6e-03, per 5 s: 17.6 gates, 0.51 missed, 0.00 crashes, speed 2.20 m/s
+      PPO 150/900: training score +17.14 (best design +24.85), lr 2.5e-03, per 5 s: 20.4 gates, 0.46 missed, 0.00 crashes, speed 2.44 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 241.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 2.9 gates, 0.00 missed, 0.00 crashes, speed 0.47 m/s
+      PPO 50/900: training score -74.81 (best design -20.00), lr 2.8e-03, per 5 s: 5.2 gates, 1.28 missed, 0.05 crashes, speed 1.34 m/s
+      PPO 75/900: training score -59.34 (best design +13.00), lr 2.8e-03, per 5 s: 8.9 gates, 1.98 missed, 0.07 crashes, speed 1.35 m/s
+      PPO 100/900: training score -18.09 (best design +16.00), lr 2.7e-03, per 5 s: 11.8 gates, 1.21 missed, 0.02 crashes, speed 1.69 m/s
+      PPO 125/900: training score  +6.76 (best design +17.62), lr 2.6e-03, per 5 s: 16.0 gates, 0.90 missed, 0.05 crashes, speed 2.01 m/s
+      PPO 150/900: training score  -3.76 (best design +20.88), lr 2.5e-03, per 5 s: 17.5 gates, 0.99 missed, 0.08 crashes, speed 2.21 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 321.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score -90.00 (best design -90.00), lr 2.7e-03, per 5 s: 2.7 gates, 0.00 missed, 0.00 crashes, speed 0.45 m/s
+      PPO 50/900: training score -85.10 (best design  +2.50), lr 2.8e-03, per 5 s: 5.2 gates, 2.09 missed, 0.20 crashes, speed 1.35 m/s
+      PPO 75/900: training score -17.49 (best design +10.95), lr 2.8e-03, per 5 s: 8.3 gates, 1.83 missed, 0.11 crashes, speed 1.36 m/s
+      PPO 100/900: training score  +1.24 (best design +17.45), lr 2.7e-03, per 5 s: 12.6 gates, 0.88 missed, 0.02 crashes, speed 1.78 m/s
+      PPO 125/900: training score +12.77 (best design +21.57), lr 2.6e-03, per 5 s: 18.2 gates, 0.55 missed, 0.00 crashes, speed 2.28 m/s
+      PPO 150/900: training score +16.90 (best design +26.10), lr 2.5e-03, per 5 s: 21.1 gates, 0.50 missed, 0.00 crashes, speed 2.50 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 401.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 2.8 gates, 0.00 missed, 0.00 crashes, speed 0.45 m/s
+      PPO 50/900: training score -68.47 (best design -48.00), lr 2.8e-03, per 5 s: 5.1 gates, 1.43 missed, 0.04 crashes, speed 1.27 m/s
+      PPO 75/900: training score -61.28 (best design +10.00), lr 2.8e-03, per 5 s: 8.8 gates, 1.71 missed, 0.03 crashes, speed 1.32 m/s
+      PPO 100/900: training score -17.66 (best design +16.00), lr 2.7e-03, per 5 s: 12.0 gates, 1.32 missed, 0.02 crashes, speed 1.71 m/s
+      PPO 125/900: training score  +7.72 (best design +18.86), lr 2.6e-03, per 5 s: 16.5 gates, 0.82 missed, 0.01 crashes, speed 2.04 m/s
+      PPO 150/900: training score  -8.57 (best design +23.05), lr 2.5e-03, per 5 s: 18.0 gates, 0.80 missed, 0.01 crashes, speed 2.22 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 481.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 2.6 gates, 0.00 missed, 0.00 crashes, speed 0.43 m/s
+      PPO 50/900: training score -64.01 (best design  +0.44), lr 2.8e-03, per 5 s: 4.8 gates, 2.62 missed, 0.21 crashes, speed 1.36 m/s
+      PPO 75/900: training score -15.99 (best design +12.00), lr 2.8e-03, per 5 s: 7.8 gates, 1.78 missed, 0.12 crashes, speed 1.27 m/s
+      PPO 100/900: training score  +2.96 (best design +15.93), lr 2.7e-03, per 5 s: 12.2 gates, 0.95 missed, 0.02 crashes, speed 1.75 m/s
+      PPO 125/900: training score +12.37 (best design +20.25), lr 2.6e-03, per 5 s: 17.5 gates, 0.62 missed, 0.00 crashes, speed 2.21 m/s
+      PPO 150/900: training score +15.86 (best design +22.92), lr 2.5e-03, per 5 s: 20.5 gates, 0.52 missed, 0.01 crashes, speed 2.49 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 561.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.6e-03, per 5 s: 2.8 gates, 0.00 missed, 0.00 crashes, speed 0.47 m/s
+      PPO 50/900: training score -42.18 (best design -20.00), lr 2.8e-03, per 5 s: 5.3 gates, 0.98 missed, 0.03 crashes, speed 1.30 m/s
+      PPO 75/900: training score -101.01 (best design +11.00), lr 2.8e-03, per 5 s: 8.7 gates, 1.67 missed, 0.04 crashes, speed 1.40 m/s
+      PPO 100/900: training score -16.22 (best design +16.50), lr 2.7e-03, per 5 s: 11.3 gates, 1.62 missed, 0.07 crashes, speed 1.73 m/s
+      PPO 125/900: training score  +6.95 (best design +17.68), lr 2.6e-03, per 5 s: 15.5 gates, 0.76 missed, 0.14 crashes, speed 2.01 m/s
+      PPO 150/900: training score  -3.70 (best design +21.60), lr 2.5e-03, per 5 s: 17.1 gates, 0.93 missed, 0.15 crashes, speed 2.24 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 641.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 2.7 gates, 0.00 missed, 0.00 crashes, speed 0.46 m/s
+      PPO 50/900: training score -63.32 (best design  +0.33), lr 2.8e-03, per 5 s: 5.3 gates, 2.15 missed, 0.13 crashes, speed 1.42 m/s
+      PPO 75/900: training score -20.93 (best design +12.59), lr 2.8e-03, per 5 s: 8.3 gates, 1.98 missed, 0.11 crashes, speed 1.34 m/s
+      PPO 100/900: training score  +1.76 (best design +16.26), lr 2.7e-03, per 5 s: 12.9 gates, 0.78 missed, 0.01 crashes, speed 1.82 m/s
+      PPO 125/900: training score +12.90 (best design +19.50), lr 2.6e-03, per 5 s: 18.3 gates, 0.54 missed, 0.01 crashes, speed 2.28 m/s
+      PPO 150/900: training score +17.10 (best design +24.83), lr 2.5e-03, per 5 s: 20.9 gates, 0.48 missed, 0.00 crashes, speed 2.52 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 721.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.6e-03, per 5 s: 2.9 gates, 0.00 missed, 0.00 crashes, speed 0.48 m/s
+      PPO 50/900: training score -83.86 (best design -35.00), lr 2.8e-03, per 5 s: 5.2 gates, 1.44 missed, 0.07 crashes, speed 1.31 m/s
+      PPO 75/900: training score -36.78 (best design +11.07), lr 2.8e-03, per 5 s: 8.8 gates, 1.55 missed, 0.03 crashes, speed 1.33 m/s
+      PPO 100/900: training score -14.70 (best design +14.00), lr 2.7e-03, per 5 s: 11.6 gates, 1.45 missed, 0.03 crashes, speed 1.66 m/s
+      PPO 125/900: training score  +7.29 (best design +17.47), lr 2.6e-03, per 5 s: 15.9 gates, 0.79 missed, 0.02 crashes, speed 1.97 m/s
+      PPO 150/900: training score  -7.63 (best design +23.80), lr 2.5e-03, per 5 s: 17.5 gates, 0.97 missed, 0.01 crashes, speed 2.20 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 801.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 2.6 gates, 0.00 missed, 0.00 crashes, speed 0.45 m/s
+      PPO 50/900: training score -64.21 (best design  +4.67), lr 2.8e-03, per 5 s: 5.1 gates, 2.02 missed, 0.21 crashes, speed 1.29 m/s
+      PPO 75/900: training score -24.97 (best design +10.00), lr 2.8e-03, per 5 s: 8.5 gates, 1.74 missed, 0.07 crashes, speed 1.40 m/s
+      PPO 100/900: training score  -0.41 (best design +17.76), lr 2.7e-03, per 5 s: 12.8 gates, 0.95 missed, 0.01 crashes, speed 1.82 m/s
+      PPO 125/900: training score +12.66 (best design +20.60), lr 2.6e-03, per 5 s: 17.9 gates, 0.60 missed, 0.00 crashes, speed 2.23 m/s
+      PPO 150/900: training score +16.21 (best design +24.65), lr 2.5e-03, per 5 s: 20.6 gates, 0.46 missed, 0.00 crashes, speed 2.48 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 881.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 2.8 gates, 0.00 missed, 0.00 crashes, speed 0.45 m/s
+      PPO 50/900: training score -59.03 (best design -17.50), lr 2.8e-03, per 5 s: 5.1 gates, 1.48 missed, 0.07 crashes, speed 1.27 m/s
+      PPO 75/900: training score -55.26 (best design  +8.00), lr 2.8e-03, per 5 s: 8.7 gates, 1.78 missed, 0.04 crashes, speed 1.35 m/s
+      PPO 100/900: training score -14.01 (best design +14.98), lr 2.7e-03, per 5 s: 12.0 gates, 1.48 missed, 0.03 crashes, speed 1.72 m/s
+      PPO 125/900: training score  +9.27 (best design +18.06), lr 2.6e-03, per 5 s: 16.3 gates, 0.78 missed, 0.01 crashes, speed 2.01 m/s
+      PPO 150/900: training score  -2.30 (best design +22.04), lr 2.5e-03, per 5 s: 18.0 gates, 0.90 missed, 0.01 crashes, speed 2.22 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 961.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.8e-03, per 5 s: 2.7 gates, 0.00 missed, 0.00 crashes, speed 0.44 m/s
+      PPO 50/900: training score -58.68 (best design  +2.73), lr 2.8e-03, per 5 s: 5.0 gates, 2.17 missed, 0.18 crashes, speed 1.37 m/s
+      PPO 75/900: training score -31.87 (best design +12.57), lr 2.8e-03, per 5 s: 8.2 gates, 1.86 missed, 0.11 crashes, speed 1.35 m/s
+      PPO 100/900: training score  +4.20 (best design +19.50), lr 2.7e-03, per 5 s: 12.5 gates, 0.77 missed, 0.01 crashes, speed 1.78 m/s
+      PPO 125/900: training score +13.57 (best design +19.95), lr 2.6e-03, per 5 s: 18.1 gates, 0.50 missed, 0.00 crashes, speed 2.26 m/s
+      PPO 150/900: training score +17.03 (best design +22.72), lr 2.5e-03, per 5 s: 20.9 gates, 0.46 missed, 0.00 crashes, speed 2.51 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 1041.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 2.9 gates, 0.00 missed, 0.00 crashes, speed 0.48 m/s
+      PPO 50/900: training score -39.21 (best design -20.00), lr 2.8e-03, per 5 s: 5.2 gates, 1.05 missed, 0.02 crashes, speed 1.31 m/s
+      PPO 75/900: training score -55.17 (best design +15.33), lr 2.8e-03, per 5 s: 9.2 gates, 1.75 missed, 0.03 crashes, speed 1.50 m/s
+      PPO 100/900: training score  -1.65 (best design +14.49), lr 2.7e-03, per 5 s: 11.9 gates, 1.68 missed, 0.04 crashes, speed 1.67 m/s
+      PPO 125/900: training score  +8.24 (best design +18.02), lr 2.6e-03, per 5 s: 16.4 gates, 0.75 missed, 0.01 crashes, speed 2.03 m/s
+      PPO 150/900: training score -12.77 (best design +21.68), lr 2.5e-03, per 5 s: 17.8 gates, 0.93 missed, 0.01 crashes, speed 2.23 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 1121.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 2.7 gates, 0.00 missed, 0.00 crashes, speed 0.44 m/s
+      PPO 50/900: training score -70.20 (best design  -1.63), lr 2.8e-03, per 5 s: 5.1 gates, 2.00 missed, 0.20 crashes, speed 1.26 m/s
+      PPO 75/900: training score -17.95 (best design +11.67), lr 2.8e-03, per 5 s: 8.4 gates, 1.41 missed, 0.07 crashes, speed 1.32 m/s
+      PPO 100/900: training score  +4.02 (best design +15.98), lr 2.7e-03, per 5 s: 12.9 gates, 0.96 missed, 0.05 crashes, speed 1.90 m/s
+      PPO 125/900: training score +13.55 (best design +19.23), lr 2.6e-03, per 5 s: 18.8 gates, 0.60 missed, 0.01 crashes, speed 2.36 m/s
+      PPO 150/900: training score +16.93 (best design +23.90), lr 2.5e-03, per 5 s: 21.5 gates, 0.51 missed, 0.01 crashes, speed 2.58 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 0-150 of 900 for trainings 1201.. (80 of 1280 still going, 80 designs)
+      PPO 25/900: training score   +nan (best design   +nan), lr 2.7e-03, per 5 s: 2.9 gates, 0.00 missed, 0.00 crashes, speed 0.46 m/s
+      PPO 50/900: training score -63.97 (best design -30.00), lr 2.8e-03, per 5 s: 5.1 gates, 0.94 missed, 0.03 crashes, speed 1.33 m/s
+      PPO 75/900: training score -72.02 (best design  +9.67), lr 2.8e-03, per 5 s: 8.8 gates, 1.92 missed, 0.06 crashes, speed 1.47 m/s
+      PPO 100/900: training score -12.80 (best design +15.41), lr 2.6e-03, per 5 s: 11.7 gates, 1.50 missed, 0.08 crashes, speed 1.72 m/s
+      PPO 125/900: training score  +7.32 (best design +17.85), lr 2.6e-03, per 5 s: 15.9 gates, 0.77 missed, 0.15 crashes, speed 2.04 m/s
+      PPO 150/900: training score  -1.47 (best design +23.00), lr 2.5e-03, per 5 s: 17.2 gates, 0.86 missed, 0.14 crashes, speed 2.21 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 1.. (80 of 640 still going, 80 designs)
+      PPO 175/900: training score -53.67 (best design +23.00), lr 2.4e-03, per 5 s: 21.8 gates, 0.63 missed, 0.01 crashes, speed 2.65 m/s
+      PPO 200/900: training score  +6.92 (best design +25.80), lr 2.3e-03, per 5 s: 23.0 gates, 0.67 missed, 0.01 crashes, speed 2.80 m/s
+      PPO 225/900: training score  -9.57 (best design +28.00), lr 2.3e-03, per 5 s: 25.5 gates, 0.46 missed, 0.01 crashes, speed 2.86 m/s
+      PPO 250/900: training score +17.11 (best design +26.80), lr 2.2e-03, per 5 s: 25.0 gates, 0.45 missed, 0.00 crashes, speed 2.94 m/s
+      PPO 275/900: training score +23.03 (best design +27.36), lr 2.1e-03, per 5 s: 27.3 gates, 0.31 missed, 0.00 crashes, speed 3.01 m/s
+      PPO 300/900: training score +18.25 (best design +31.00), lr 2.0e-03, per 5 s: 26.2 gates, 0.36 missed, 0.00 crashes, speed 3.05 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 162.. (80 of 640 still going, 80 designs)
+      PPO 175/900: training score -73.13 (best design +22.00), lr 2.4e-03, per 5 s: 21.8 gates, 0.61 missed, 0.01 crashes, speed 2.65 m/s
+      PPO 200/900: training score  +3.45 (best design +25.75), lr 2.3e-03, per 5 s: 23.0 gates, 0.63 missed, 0.01 crashes, speed 2.76 m/s
+      PPO 225/900: training score  -8.40 (best design +28.00), lr 2.3e-03, per 5 s: 25.4 gates, 0.46 missed, 0.01 crashes, speed 2.86 m/s
+      PPO 250/900: training score +18.80 (best design +29.00), lr 2.2e-03, per 5 s: 24.9 gates, 0.42 missed, 0.00 crashes, speed 2.94 m/s
+      PPO 275/900: training score +23.24 (best design +26.75), lr 2.1e-03, per 5 s: 27.3 gates, 0.31 missed, 0.00 crashes, speed 3.02 m/s
+      PPO 300/900: training score +15.52 (best design +30.75), lr 2.0e-03, per 5 s: 26.2 gates, 0.34 missed, 0.00 crashes, speed 3.06 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 327.. (80 of 640 still going, 80 designs)
+      PPO 175/900: training score -54.38 (best design +22.00), lr 2.4e-03, per 5 s: 22.0 gates, 0.63 missed, 0.01 crashes, speed 2.68 m/s
+      PPO 200/900: training score  +3.87 (best design +27.52), lr 2.3e-03, per 5 s: 23.2 gates, 0.70 missed, 0.01 crashes, speed 2.81 m/s
+      PPO 225/900: training score -10.63 (best design +32.00), lr 2.3e-03, per 5 s: 25.5 gates, 0.55 missed, 0.01 crashes, speed 2.86 m/s
+      PPO 250/900: training score +14.98 (best design +28.50), lr 2.2e-03, per 5 s: 24.9 gates, 0.47 missed, 0.00 crashes, speed 2.93 m/s
+      PPO 275/900: training score +23.07 (best design +27.39), lr 2.1e-03, per 5 s: 27.3 gates, 0.31 missed, 0.00 crashes, speed 3.01 m/s
+      PPO 300/900: training score +19.08 (best design +30.75), lr 2.0e-03, per 5 s: 26.2 gates, 0.33 missed, 0.00 crashes, speed 3.06 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 491.. (80 of 640 still going, 80 designs)
+      PPO 175/900: training score -50.51 (best design +18.00), lr 2.4e-03, per 5 s: 22.1 gates, 0.64 missed, 0.00 crashes, speed 2.70 m/s
+      PPO 200/900: training score  +2.06 (best design +30.00), lr 2.3e-03, per 5 s: 23.4 gates, 0.63 missed, 0.00 crashes, speed 2.86 m/s
+      PPO 225/900: training score  -3.53 (best design +29.00), lr 2.3e-03, per 5 s: 25.8 gates, 0.51 missed, 0.01 crashes, speed 2.89 m/s
+      PPO 250/900: training score +16.05 (best design +30.50), lr 2.2e-03, per 5 s: 25.1 gates, 0.47 missed, 0.01 crashes, speed 2.95 m/s
+      PPO 275/900: training score +22.92 (best design +27.76), lr 2.1e-03, per 5 s: 27.4 gates, 0.34 missed, 0.00 crashes, speed 3.03 m/s
+      PPO 300/900: training score +18.21 (best design +31.11), lr 2.0e-03, per 5 s: 26.4 gates, 0.36 missed, 0.00 crashes, speed 3.08 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 641.. (80 of 640 still going, 80 designs)
+      PPO 175/900: training score -39.59 (best design +16.75), lr 2.4e-03, per 5 s: 22.1 gates, 0.62 missed, 0.01 crashes, speed 2.69 m/s
+      PPO 200/900: training score  +5.60 (best design +27.75), lr 2.3e-03, per 5 s: 23.3 gates, 0.68 missed, 0.01 crashes, speed 2.84 m/s
+      PPO 225/900: training score  +0.32 (best design +28.00), lr 2.3e-03, per 5 s: 25.4 gates, 0.53 missed, 0.07 crashes, speed 2.92 m/s
+      PPO 250/900: training score +15.60 (best design +28.00), lr 2.2e-03, per 5 s: 24.8 gates, 0.47 missed, 0.07 crashes, speed 2.95 m/s
+      PPO 275/900: training score +22.79 (best design +28.16), lr 2.1e-03, per 5 s: 26.9 gates, 0.30 missed, 0.07 crashes, speed 3.01 m/s
+      PPO 300/900: training score +15.47 (best design +31.00), lr 2.0e-03, per 5 s: 25.9 gates, 0.37 missed, 0.07 crashes, speed 3.07 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 814.. (80 of 640 still going, 80 designs)
+      PPO 175/900: training score -56.31 (best design +23.00), lr 2.4e-03, per 5 s: 22.1 gates, 0.68 missed, 0.00 crashes, speed 2.67 m/s
+      PPO 200/900: training score  +2.86 (best design +27.00), lr 2.3e-03, per 5 s: 23.2 gates, 0.62 missed, 0.01 crashes, speed 2.82 m/s
+      PPO 225/900: training score  -6.43 (best design +29.00), lr 2.3e-03, per 5 s: 25.5 gates, 0.45 missed, 0.01 crashes, speed 2.86 m/s
+      PPO 250/900: training score +14.66 (best design +29.00), lr 2.2e-03, per 5 s: 25.0 gates, 0.46 missed, 0.01 crashes, speed 2.94 m/s
+      PPO 275/900: training score +23.14 (best design +27.96), lr 2.1e-03, per 5 s: 27.4 gates, 0.32 missed, 0.00 crashes, speed 3.02 m/s
+      PPO 300/900: training score +18.98 (best design +31.50), lr 2.0e-03, per 5 s: 26.4 gates, 0.32 missed, 0.00 crashes, speed 3.08 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 964.. (80 of 640 still going, 80 designs)
+      PPO 175/900: training score -53.92 (best design +29.00), lr 2.4e-03, per 5 s: 22.2 gates, 0.69 missed, 0.01 crashes, speed 2.71 m/s
+      PPO 200/900: training score  +1.52 (best design +26.11), lr 2.3e-03, per 5 s: 23.3 gates, 0.73 missed, 0.00 crashes, speed 2.80 m/s
+      PPO 225/900: training score -14.90 (best design +27.00), lr 2.3e-03, per 5 s: 25.5 gates, 0.49 missed, 0.01 crashes, speed 2.87 m/s
+      PPO 250/900: training score +15.23 (best design +28.00), lr 2.2e-03, per 5 s: 24.9 gates, 0.44 missed, 0.01 crashes, speed 2.93 m/s
+      PPO 275/900: training score +23.03 (best design +28.45), lr 2.1e-03, per 5 s: 27.4 gates, 0.32 missed, 0.00 crashes, speed 3.03 m/s
+      PPO 300/900: training score +17.96 (best design +30.33), lr 2.0e-03, per 5 s: 26.3 gates, 0.37 missed, 0.00 crashes, speed 3.07 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 150-300 of 900 for trainings 1130.. (80 of 640 still going, 80 designs)
+      PPO 175/900: training score -71.02 (best design +14.50), lr 2.4e-03, per 5 s: 22.1 gates, 0.67 missed, 0.01 crashes, speed 2.68 m/s
+      PPO 200/900: training score  -1.65 (best design +27.00), lr 2.3e-03, per 5 s: 23.2 gates, 0.69 missed, 0.01 crashes, speed 2.82 m/s
+      PPO 225/900: training score -43.76 (best design +28.67), lr 2.3e-03, per 5 s: 25.6 gates, 0.48 missed, 0.01 crashes, speed 2.88 m/s
+      PPO 250/900: training score +19.53 (best design +29.00), lr 2.2e-03, per 5 s: 25.1 gates, 0.42 missed, 0.00 crashes, speed 2.94 m/s
+      PPO 275/900: training score +22.84 (best design +28.66), lr 2.1e-03, per 5 s: 27.4 gates, 0.34 missed, 0.00 crashes, speed 3.04 m/s
+      PPO 300/900: training score +20.77 (best design +30.61), lr 2.0e-03, per 5 s: 26.3 gates, 0.35 missed, 0.00 crashes, speed 3.07 m/s
+      PPO: 80 designs x 4096 drones, 1573 M steps, simulation 16 s, learning 189 s (7.7 M steps/s)
+[rl] halving: iterations 300-900 of 900 for trainings 9.. (80 of 320 still going, 80 designs)
+      PPO 325/900: training score -28.84 (best design +29.00), lr 1.9e-03, per 5 s: 27.2 gates, 0.33 missed, 0.00 crashes, speed 3.16 m/s
+      PPO 350/900: training score  +6.51 (best design +32.00), lr 1.8e-03, per 5 s: 27.5 gates, 0.32 missed, 0.00 crashes, speed 3.22 m/s
+      PPO 375/900: training score +17.95 (best design +33.00), lr 1.8e-03, per 5 s: 29.4 gates, 0.28 missed, 0.00 crashes, speed 3.22 m/s
+      PPO 400/900: training score +17.31 (best design +31.00), lr 1.7e-03, per 5 s: 28.1 gates, 0.28 missed, 0.00 crashes, speed 3.23 m/s
+      PPO 425/900: training score +26.73 (best design +29.54), lr 1.6e-03, per 5 s: 30.0 gates, 0.22 missed, 0.00 crashes, speed 3.27 m/s
+      PPO 450/900: training score +20.66 (best design +33.50), lr 1.5e-03, per 5 s: 28.5 gates, 0.26 missed, 0.00 crashes, speed 3.28 m/s
+      PPO 475/900: training score +25.20 (best design +33.00), lr 1.4e-03, per 5 s: 28.8 gates, 0.21 missed, 0.00 crashes, speed 3.33 m/s
+      PPO 500/900: training score +23.81 (best design +33.00), lr 1.3e-03, per 5 s: 30.4 gates, 0.22 missed, 0.04 crashes, speed 3.34 m/s
+      PPO 525/900: training score +24.19 (best design +32.50), lr 1.3e-03, per 5 s: 28.9 gates, 0.22 missed, 0.07 crashes, speed 3.34 m/s
+      PPO 550/900: training score +27.78 (best design +30.89), lr 1.2e-03, per 5 s: 30.6 gates, 0.17 missed, 0.07 crashes, speed 3.37 m/s
+      PPO 575/900: training score +25.06 (best design +33.50), lr 1.1e-03, per 5 s: 29.1 gates, 0.19 missed, 0.07 crashes, speed 3.38 m/s
+      PPO 600/900: training score +26.90 (best design +33.67), lr 1.0e-03, per 5 s: 29.4 gates, 0.18 missed, 0.07 crashes, speed 3.43 m/s
+      PPO 625/900: training score +25.61 (best design +33.50), lr 9.2e-04, per 5 s: 31.0 gates, 0.17 missed, 0.07 crashes, speed 3.41 m/s
+      PPO 650/900: training score +26.44 (best design +32.33), lr 8.4e-04, per 5 s: 29.6 gates, 0.17 missed, 0.07 crashes, speed 3.40 m/s
+      PPO 675/900: training score +28.78 (best design +31.82), lr 7.5e-04, per 5 s: 31.3 gates, 0.14 missed, 0.07 crashes, speed 3.43 m/s
+      PPO 700/900: training score +28.42 (best design +33.67), lr 6.7e-04, per 5 s: 29.7 gates, 0.15 missed, 0.07 crashes, speed 3.44 m/s
+      PPO 725/900: training score +28.20 (best design +34.00), lr 5.9e-04, per 5 s: 29.9 gates, 0.15 missed, 0.07 crashes, speed 3.49 m/s
+      PPO 750/900: training score +28.03 (best design +34.00), lr 5.0e-04, per 5 s: 31.5 gates, 0.13 missed, 0.07 crashes, speed 3.46 m/s
+      PPO 775/900: training score +28.52 (best design +33.57), lr 4.2e-04, per 5 s: 30.1 gates, 0.14 missed, 0.07 crashes, speed 3.45 m/s
+      PPO 800/900: training score +29.41 (best design +32.16), lr 3.4e-04, per 5 s: 31.8 gates, 0.12 missed, 0.07 crashes, speed 3.48 m/s
+      PPO 825/900: training score +28.21 (best design +34.00), lr 2.5e-04, per 5 s: 30.2 gates, 0.13 missed, 0.07 crashes, speed 3.48 m/s
+      PPO 850/900: training score +28.43 (best design +34.00), lr 1.7e-04, per 5 s: 30.4 gates, 0.12 missed, 0.07 crashes, speed 3.54 m/s
+      PPO 875/900: training score +28.87 (best design +34.17), lr 1.5e-04, per 5 s: 31.9 gates, 0.10 missed, 0.07 crashes, speed 3.49 m/s
+      PPO 900/900: training score +29.28 (best design +34.50), lr 1.5e-04, per 5 s: 30.4 gates, 0.11 missed, 0.07 crashes, speed 3.48 m/s
+      PPO: 80 designs x 4096 drones, 6291 M steps, simulation 64 s, learning 757 s (7.7 M steps/s)
+[rl] halving: iterations 300-900 of 900 for trainings 327.. (80 of 320 still going, 80 designs)
+      PPO 325/900: training score -20.87 (best design +31.50), lr 1.9e-03, per 5 s: 27.3 gates, 0.29 missed, 0.00 crashes, speed 3.17 m/s
+      PPO 350/900: training score  +7.56 (best design +33.00), lr 1.8e-03, per 5 s: 27.7 gates, 0.33 missed, 0.00 crashes, speed 3.22 m/s
+      PPO 375/900: training score  +0.52 (best design +33.00), lr 1.8e-03, per 5 s: 29.5 gates, 0.26 missed, 0.00 crashes, speed 3.23 m/s
+      PPO 400/900: training score +15.04 (best design +30.00), lr 1.7e-03, per 5 s: 28.2 gates, 0.29 missed, 0.00 crashes, speed 3.25 m/s
+      PPO 425/900: training score +26.57 (best design +31.02), lr 1.6e-03, per 5 s: 30.2 gates, 0.24 missed, 0.00 crashes, speed 3.29 m/s
+      PPO 450/900: training score +20.57 (best design +33.00), lr 1.5e-03, per 5 s: 28.7 gates, 0.24 missed, 0.00 crashes, speed 3.31 m/s
+      PPO 475/900: training score +21.79 (best design +33.00), lr 1.4e-03, per 5 s: 29.1 gates, 0.23 missed, 0.00 crashes, speed 3.35 m/s
+      PPO 500/900: training score +19.63 (best design +33.00), lr 1.3e-03, per 5 s: 30.8 gates, 0.19 missed, 0.00 crashes, speed 3.35 m/s
+      PPO 525/900: training score +25.97 (best design +32.86), lr 1.3e-03, per 5 s: 29.4 gates, 0.21 missed, 0.00 crashes, speed 3.34 m/s
+      PPO 550/900: training score +28.38 (best design +31.12), lr 1.2e-03, per 5 s: 31.2 gates, 0.18 missed, 0.00 crashes, speed 3.39 m/s
+      PPO 575/900: training score +25.89 (best design +33.57), lr 1.1e-03, per 5 s: 29.7 gates, 0.19 missed, 0.00 crashes, speed 3.39 m/s
+      PPO 600/900: training score +26.54 (best design +33.20), lr 1.0e-03, per 5 s: 29.9 gates, 0.17 missed, 0.00 crashes, speed 3.43 m/s
+      PPO 625/900: training score +27.32 (best design +34.00), lr 9.2e-04, per 5 s: 31.6 gates, 0.16 missed, 0.00 crashes, speed 3.43 m/s
+      PPO 650/900: training score +27.20 (best design +33.00), lr 8.4e-04, per 5 s: 30.1 gates, 0.17 missed, 0.00 crashes, speed 3.42 m/s
+      PPO 675/900: training score +29.35 (best design +31.88), lr 7.5e-04, per 5 s: 31.9 gates, 0.15 missed, 0.00 crashes, speed 3.45 m/s
+      PPO 700/900: training score +26.48 (best design +34.00), lr 6.7e-04, per 5 s: 30.3 gates, 0.16 missed, 0.00 crashes, speed 3.45 m/s
+      PPO 725/900: training score +28.68 (best design +34.33), lr 5.9e-04, per 5 s: 30.5 gates, 0.15 missed, 0.00 crashes, speed 3.49 m/s
+      PPO 750/900: training score +27.89 (best design +34.00), lr 5.0e-04, per 5 s: 32.1 gates, 0.14 missed, 0.00 crashes, speed 3.48 m/s
+      PPO 775/900: training score +29.05 (best design +33.71), lr 4.2e-04, per 5 s: 30.6 gates, 0.14 missed, 0.00 crashes, speed 3.46 m/s
+      PPO 800/900: training score +30.11 (best design +32.49), lr 3.4e-04, per 5 s: 32.3 gates, 0.12 missed, 0.00 crashes, speed 3.49 m/s
+      PPO 825/900: training score +29.24 (best design +34.40), lr 2.5e-04, per 5 s: 30.7 gates, 0.12 missed, 0.00 crashes, speed 3.49 m/s
+      PPO 850/900: training score +29.47 (best design +34.00), lr 1.7e-04, per 5 s: 30.8 gates, 0.11 missed, 0.00 crashes, speed 3.52 m/s
+      PPO 875/900: training score +29.35 (best design +34.83), lr 1.5e-04, per 5 s: 32.4 gates, 0.10 missed, 0.00 crashes, speed 3.51 m/s
+      PPO 900/900: training score +29.83 (best design +33.60), lr 1.5e-04, per 5 s: 30.9 gates, 0.11 missed, 0.00 crashes, speed 3.48 m/s
+      PPO: 80 designs x 4096 drones, 6291 M steps, simulation 64 s, learning 757 s (7.7 M steps/s)
+[rl] halving: iterations 300-900 of 900 for trainings 641.. (80 of 320 still going, 80 designs)
+      PPO 325/900: training score -17.38 (best design +30.00), lr 1.9e-03, per 5 s: 27.2 gates, 0.29 missed, 0.00 crashes, speed 3.15 m/s
+      PPO 350/900: training score  +4.50 (best design +31.00), lr 1.8e-03, per 5 s: 27.6 gates, 0.31 missed, 0.00 crashes, speed 3.21 m/s
+      PPO 375/900: training score  +2.76 (best design +32.00), lr 1.8e-03, per 5 s: 29.5 gates, 0.26 missed, 0.00 crashes, speed 3.23 m/s
+      PPO 400/900: training score +18.80 (best design +32.00), lr 1.7e-03, per 5 s: 28.2 gates, 0.27 missed, 0.00 crashes, speed 3.24 m/s
+      PPO 425/900: training score +26.87 (best design +29.94), lr 1.6e-03, per 5 s: 30.2 gates, 0.22 missed, 0.00 crashes, speed 3.29 m/s
+      PPO 450/900: training score +17.99 (best design +34.00), lr 1.5e-03, per 5 s: 28.6 gates, 0.26 missed, 0.03 crashes, speed 3.28 m/s
+      PPO 475/900: training score +24.74 (best design +34.00), lr 1.4e-03, per 5 s: 28.6 gates, 0.21 missed, 0.07 crashes, speed 3.36 m/s
+      PPO 500/900: training score +21.36 (best design +33.00), lr 1.3e-03, per 5 s: 30.3 gates, 0.19 missed, 0.07 crashes, speed 3.34 m/s
+      PPO 525/900: training score +24.59 (best design +33.00), lr 1.3e-03, per 5 s: 28.9 gates, 0.21 missed, 0.07 crashes, speed 3.34 m/s
+      PPO 550/900: training score +27.82 (best design +31.09), lr 1.2e-03, per 5 s: 30.7 gates, 0.17 missed, 0.07 crashes, speed 3.38 m/s
+      PPO 575/900: training score +25.30 (best design +33.50), lr 1.1e-03, per 5 s: 29.2 gates, 0.19 missed, 0.07 crashes, speed 3.39 m/s
+      PPO 600/900: training score +26.61 (best design +32.50), lr 1.0e-03, per 5 s: 29.4 gates, 0.17 missed, 0.07 crashes, speed 3.46 m/s
+      PPO 625/900: training score +25.18 (best design +34.00), lr 9.2e-04, per 5 s: 31.1 gates, 0.15 missed, 0.07 crashes, speed 3.42 m/s
+      PPO 650/900: training score +27.46 (best design +33.30), lr 8.4e-04, per 5 s: 29.6 gates, 0.16 missed, 0.07 crashes, speed 3.41 m/s
+      PPO 675/900: training score +28.86 (best design +31.78), lr 7.5e-04, per 5 s: 31.4 gates, 0.14 missed, 0.07 crashes, speed 3.45 m/s
+      PPO 700/900: training score +27.37 (best design +34.00), lr 6.7e-04, per 5 s: 29.8 gates, 0.15 missed, 0.07 crashes, speed 3.45 m/s
+      PPO 725/900: training score +28.38 (best design +34.00), lr 5.9e-04, per 5 s: 30.0 gates, 0.14 missed, 0.07 crashes, speed 3.51 m/s
+      PPO 750/900: training score +26.88 (best design +35.00), lr 5.0e-04, per 5 s: 31.7 gates, 0.14 missed, 0.07 crashes, speed 3.48 m/s
+      PPO 775/900: training score +28.41 (best design +34.00), lr 4.2e-04, per 5 s: 30.2 gates, 0.14 missed, 0.07 crashes, speed 3.46 m/s
+      PPO 800/900: training score +29.55 (best design +32.28), lr 3.4e-04, per 5 s: 31.9 gates, 0.12 missed, 0.07 crashes, speed 3.49 m/s
+      PPO 825/900: training score +27.88 (best design +34.50), lr 2.5e-04, per 5 s: 30.3 gates, 0.13 missed, 0.07 crashes, speed 3.49 m/s
+      PPO 850/900: training score +29.17 (best design +34.00), lr 1.7e-04, per 5 s: 30.4 gates, 0.11 missed, 0.07 crashes, speed 3.54 m/s
+      PPO 875/900: training score +28.53 (best design +34.33), lr 1.5e-04, per 5 s: 32.0 gates, 0.11 missed, 0.07 crashes, speed 3.51 m/s
+      PPO 900/900: training score +29.47 (best design +34.00), lr 1.5e-04, per 5 s: 30.5 gates, 0.11 missed, 0.07 crashes, speed 3.49 m/s
+      PPO: 80 designs x 4096 drones, 6291 M steps, simulation 64 s, learning 757 s (7.7 M steps/s)
+[rl] halving: iterations 300-900 of 900 for trainings 969.. (80 of 320 still going, 80 designs)
+      PPO 325/900: training score -26.08 (best design +31.00), lr 1.9e-03, per 5 s: 27.2 gates, 0.28 missed, 0.00 crashes, speed 3.15 m/s
+      PPO 350/900: training score +12.99 (best design +33.00), lr 1.8e-03, per 5 s: 27.6 gates, 0.30 missed, 0.00 crashes, speed 3.21 m/s
+      PPO 375/900: training score +18.06 (best design +32.50), lr 1.8e-03, per 5 s: 29.4 gates, 0.26 missed, 0.00 crashes, speed 3.22 m/s
+      PPO 400/900: training score +17.30 (best design +31.33), lr 1.7e-03, per 5 s: 28.1 gates, 0.28 missed, 0.00 crashes, speed 3.24 m/s
+      PPO 425/900: training score +26.78 (best design +29.54), lr 1.6e-03, per 5 s: 30.1 gates, 0.21 missed, 0.00 crashes, speed 3.29 m/s
+      PPO 450/900: training score +17.57 (best design +33.00), lr 1.5e-03, per 5 s: 28.7 gates, 0.27 missed, 0.00 crashes, speed 3.31 m/s
+      PPO 475/900: training score +25.77 (best design +33.00), lr 1.4e-03, per 5 s: 29.0 gates, 0.22 missed, 0.00 crashes, speed 3.33 m/s
+      PPO 500/900: training score +25.44 (best design +33.00), lr 1.3e-03, per 5 s: 30.7 gates, 0.19 missed, 0.00 crashes, speed 3.34 m/s
+      PPO 525/900: training score +25.74 (best design +33.00), lr 1.3e-03, per 5 s: 29.3 gates, 0.21 missed, 0.00 crashes, speed 3.35 m/s
+      PPO 550/900: training score +28.35 (best design +31.38), lr 1.2e-03, per 5 s: 31.1 gates, 0.17 missed, 0.00 crashes, speed 3.38 m/s
+      PPO 575/900: training score +26.95 (best design +33.50), lr 1.1e-03, per 5 s: 29.5 gates, 0.19 missed, 0.00 crashes, speed 3.38 m/s
+      PPO 600/900: training score +26.82 (best design +34.00), lr 1.0e-03, per 5 s: 29.7 gates, 0.17 missed, 0.00 crashes, speed 3.41 m/s
+      PPO 625/900: training score +24.72 (best design +33.50), lr 9.2e-04, per 5 s: 31.4 gates, 0.16 missed, 0.00 crashes, speed 3.41 m/s
+      PPO 650/900: training score +27.68 (best design +33.07), lr 8.4e-04, per 5 s: 29.9 gates, 0.16 missed, 0.00 crashes, speed 3.40 m/s
+      PPO 675/900: training score +29.26 (best design +32.02), lr 7.5e-04, per 5 s: 31.7 gates, 0.14 missed, 0.00 crashes, speed 3.43 m/s
+      PPO 700/900: training score +27.65 (best design +33.33), lr 6.7e-04, per 5 s: 30.1 gates, 0.15 missed, 0.00 crashes, speed 3.44 m/s
+      PPO 725/900: training score +28.30 (best design +34.00), lr 5.9e-04, per 5 s: 30.3 gates, 0.14 missed, 0.00 crashes, speed 3.47 m/s
+      PPO 750/900: training score +26.47 (best design +34.00), lr 5.0e-04, per 5 s: 32.0 gates, 0.13 missed, 0.00 crashes, speed 3.47 m/s
+      PPO 775/900: training score +29.56 (best design +33.21), lr 4.2e-04, per 5 s: 30.5 gates, 0.13 missed, 0.00 crashes, speed 3.45 m/s
+      PPO 800/900: training score +30.05 (best design +32.35), lr 3.4e-04, per 5 s: 32.2 gates, 0.11 missed, 0.00 crashes, speed 3.48 m/s
+      PPO 825/900: training score +28.75 (best design +33.43), lr 2.5e-04, per 5 s: 30.6 gates, 0.12 missed, 0.00 crashes, speed 3.48 m/s
+      PPO 850/900: training score +30.37 (best design +34.00), lr 1.7e-04, per 5 s: 30.7 gates, 0.11 missed, 0.00 crashes, speed 3.52 m/s
+      PPO 875/900: training score +28.30 (best design +35.00), lr 1.5e-04, per 5 s: 32.3 gates, 0.10 missed, 0.00 crashes, speed 3.50 m/s
+      PPO 900/900: training score +29.92 (best design +33.71), lr 1.5e-04, per 5 s: 30.8 gates, 0.10 missed, 0.00 crashes, speed 3.48 m/s
+      PPO: 80 designs x 4096 drones, 6291 M steps, simulation 64 s, learning 757 s (7.7 M steps/s)
+re-evaluation after the optimization (8 halvings each, picked policy on 40960 episodes; 8510 s):
+   #1 of the optimization       before +33.06   now +32.31 +- 0.44, max +32.99  (+32.2, +31.4, +33.0, +32.5, +32.3, +32.8, +32.1, +32.2)
+   #2 of the optimization       before +32.75   now +32.61 +- 0.31, max +33.07  (+32.3, +33.1, +32.1, +32.2, +32.8, +32.6, +32.7, +32.9)
+   #3 of the optimization       before +32.64   now +32.18 +- 0.13, max +32.33  (+32.0, +32.3, +32.1, +32.3, +32.3, +32.1, +32.3, +32.0)
+   #4 of the optimization       before +32.58   now +32.35 +- 0.28, max +32.72  (+32.0, +32.5, +32.2, +32.7, +32.7, +32.3, +31.9, +32.5)
+   #5 of the optimization       before +32.57   now +32.22 +- 0.28, max +32.64  (+32.0, +31.8, +32.0, +32.5, +32.6, +32.4, +32.1, +32.4)
+   paper's task A design        before   +nan   now +32.00 +- 0.25, max +32.32  (+31.8, +31.9, +32.0, +31.5, +32.1, +32.3, +32.1, +32.3)
+   baseline (franchi)           before   +nan   now +30.67 +- 0.22, max +31.02  (+30.7, +30.7, +31.0, +30.8, +30.4, +30.4, +30.5, +30.9)
+   baseline (rajappa)           before   +nan   now +29.50 +- 0.18, max +29.75  (+29.6, +29.2, +29.4, +29.8, +29.7, +29.3, +29.5, +29.5)
+   baseline (shen)              before   +nan   now +27.38 +- 0.18, max +27.63  (+27.5, +27.3, +27.5, +27.5, +27.2, +27.6, +27.0, +27.4)
+   baseline (planar)            before +28.77   now +29.47 +- 0.25, max +29.75  (+29.7, +29.7, +29.8, +29.2, +29.3, +29.7, +29.2, +29.3)
+done: final design #2 of the optimization: fitness +32.61 +- 0.31 vs baseline +29.47 +- 0.25 (means of 8 halvings, 40960 episodes each)
+rendering the final design against the baselines
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.2
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5090" (31 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /proj/build/warp_cache/1.18.0
+Module validate_and_correct_inertia_kernel_1ff2ac62 1ff2ac6 load on device 'cuda:0' took 51.26 ms  (cached)
+Module sim 3c5560f load on device 'cuda:0' took 36.21 ms  (cached)
+Module newton._src.solvers.solver d7b7ff4 load on device 'cuda:0' took 32.17 ms  (cached)
+optimized  fitness +33.09  gates 33.63  missed 0.054  crashes 0.0 %
+Module newton._src.geometry.bvh 58a3a49 load on device 'cuda:0' took 58.35 ms  (cached)
+Module newton._src.sensors.warp_raytrace.camera_utils 4ca4fe3 load on device 'cuda:0' took 6.80 ms  (cached)
+Module create_kernel__locals__render_megakernel_2b428d80 5b84d73 load on device 'cuda:0' took 39.73 ms  (cached)
+planar     fitness +29.67  gates 30.43  missed 0.076  crashes 0.0 %
+franchi    fitness +31.08  gates 31.77  missed 0.069  crashes 0.0 %
+rajappa    fitness +29.69  gates 30.52  missed 0.083  crashes 0.0 %
+shen       fitness +27.63  gates 28.17  missed 0.054  crashes 0.0 %
+video -> /proj/results/task_A_resumed/final_comparison.mp4, report -> /proj/results/task_A_resumed/final_report.pdf
